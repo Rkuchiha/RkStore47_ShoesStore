@@ -1,0 +1,39 @@
+.Header {
+  display:flex;
+  justify-content: space-between;  
+}
+
+.logo {
+  width: 10rem;
+  height: 3rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: var(--patch-color);
+  
+}
+
+.menu > li:hover{
+  cursor: pointer;
+  color: var(--heading-color);
+}
+
+/*============================For mobile==========================*/
+@media screen and (max-width: 768px) {
+  .Header>:nth-child(2){
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .menu{
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+    margin-right: -1.5rem;
+  }
+
+
+}

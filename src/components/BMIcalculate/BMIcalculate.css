@@ -1,0 +1,65 @@
+.ibm-container{
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+.calculate-section {
+  display: flex;
+}
+
+.ibm-text {
+  display: flex;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-overflow: inherit;
+}
+.calculate-section {
+  display: flex;
+  gap: 6rem;
+  background-color: gray;
+  padding: 1rem 2rem;
+}
+.calculate-section > div {
+  border-radius: 20%;
+  border: 1px solid white;
+}
+.calculate-section > div > input {
+  background-color: transparent;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  color: var(--lightgray);
+}
+.anotation {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.calculate-section > div:nth-child(4){
+    border: none;
+    display: flex;
+    align-content: center;
+    color: white;
+}
+
+.message >div{
+   
+    margin: 0 2rem 0 5rem;
+    width: auto;
+    left: 10rem ;
+    
+}
+
+/*============================For mobile==========================*/
+@media screen and (max-width: 768px) {
+  .calculate-section {
+    display: grid;
+    scale: 0.9;
+    border-radius: 2rem;
+    justify-content: center;
+  }
+}
